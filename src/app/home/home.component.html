@@ -1,0 +1,133 @@
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<div class="head">
+    <app-header></app-header>
+</div>
+<div class="home-img">
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</div><br>
+<!-- cards  -->
+<div class="container" data-aos="fade-up"
+data-aos-anchor-placement="top-bottom" >
+    <div class="cards" >  
+        <img src="../../assets/arcadegame-card.png ">
+        <img src="../../assets/food-drink-card.png">
+        <img src="../../assets/party-card.png">
+        <img src="../../assets/bowlling-card.png">
+    </div>
+</div>
+
+<!-- games card  -->
+<div class="container">
+    <div class="content">
+        <p data-aos="fade-down">Games</p>
+        <h2 style=" color:#1c2c89;" data-aos="fade-down">Game Time, All The Time</h2>
+        <p data-aos="fade-up">In the world of gaming, every player is a hero in their own story.<br>Level up your life through gaming  where every challenge is an opportunity to grow.</p>
+        <button class="glow-on-hover" type="button" data-aos="fade-up"  >EXPLORE NOW!</button>
+    </div>
+    <div class="row imgs">
+        <div class="col gokarting">
+          <img src="../../assets/gokarting-i.jpg" data-aos="zoom-in" data-aos-duration="4000" alt=""><br><br>
+          <img src="../../assets/bowling-i.jpg"  data-aos="zoom-in" data-aos-duration="7000" alt="">
+        </div>
+        <div class="col games">
+          <img src="../../assets/arcade2-i.jpg"  data-aos="zoom-in" data-aos-duration="9000" alt="" width="270px"><br><br>
+          <img src="../../assets/arcade-i.jpeg"  data-aos="zoom-in" data-aos-duration="11000" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- flip card  -->
+<div class="container">
+    <div class="membership">
+       <div class="row">
+          <div class="col-6">
+             <div class="content">
+                <div class="input-group-lg">
+                   <h2 style="color: hsl(245, 48%, 37%);">Check Your Card Balance Here!</h2><br>
+                   <input type="text" id="" name="" placeholder="Enter your card Number" [(ngModel)]="cardid"><br>
+                    <input type="button" value="Submit" (click)="check()" style=" background-color: hsl(245, 48%, 37%); color: aliceblue;">
+                   <!-- <button style=" background-color: hsl(245, 48%, 37%); color: aliceblue;">Submit</button> -->
+                </div>
+             </div>
+          </div>
+          <div class="col-6">
+             <img id="slidecaption" src="../../assets/card.png" alt="">
+          </div>
+       </div>
+    </div>
+ </div><br>
+
+<!-- tickets  -->
+<div class="ticket-content">
+    <p data-aos="fade-down">Incredible Deals</p>
+    <h1 style="color:#1c2c89;" data-aos="fade-down">UNBELIEVABLE OFFERS</h1>
+    <p data-aos="fade-down">Phenomenal deals that will amplify your fervour for games!</p>
+    <button class="glow-on-hover" type="button" data-aos="fade-up">EXPLORE LATEST DEALS</button>
+
+    <div class="marquee">
+        <div class="tickets">
+            <img src="../../assets/ticket-img.png" alt="Tickets Image"  width="100%">
+            <!-- <img src="../../assets/ticket-img.png" alt="Tickets Image"  width="100%">    -->
+        </div>
+    </div>
+</div>
+
+<!-- host gettogethers  -->
+<div class="imges">
+    <p data-aos="fade-down">Host Get-Togethers</p>
+    <h1 style="color: #1c2c89;" data-aos="fade-down">EXHILARATING PARTIES</h1>
+    <p data-aos="fade-up">Organising a party at a gaming zone is a fabulous idea!</p>
+    <div class="gettogethers">
+        <div class="photo">
+            <img src="../../assets/birthday-girl.png " data-aos="zoom-in" data-aos-duration="700" >
+        </div>
+        <div class="photo">
+            <img src="../../assets/pre-wedding.png" data-aos="zoom-in" data-aos-duration="1500">
+        </div>
+        <div class="photo">
+            <img src="../../assets/team-i.png" data-aos="zoom-in" data-aos-duration="2000">
+        </div>
+        <div class="photo">
+            <img src="../../assets/team-work-i.png" data-aos="zoom-in" data-aos-duration="2500">
+        </div>
+        <div class="photo">
+            <img src="../../assets/birthday-party.png" data-aos="zoom-in" data-aos-duration="3000">
+        </div>
+    </div>
+</div>
+
+
+<!-- champions  -->
+<!-- <div class="champions-img">
+   <div class="champions">
+    <img src="../../assets/champions-gallery.png" alt="" class="m-auto d-block animate__animated animate__fadeInLeft" data-aos="fade-right" >
+   </div>
+   <div class="content2">
+     <p data-aos="fade-down">Winners Paradise</p>
+     <h1 style="color:#1c2c89;" data-aos="fade-down">CHAMPIONS GALLERY</h1>
+     <p data-aos="fade-down">Your skills and winning scores can bring home a lot more than you think! Take a look!</p>
+     <button class="glow-on-hover" type="button" data-aos="fade-up">OUR CHAMPIONS!</button>
+   </div>
+</div> -->
+
+
+
+
+<app-footer></app-footer>
+
+
+
+

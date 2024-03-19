@@ -1,0 +1,108 @@
+*{
+    margin-top: 20px;
+    max-width: 100%;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-3 > img{
+    border-radius: 10px;
+}
+
+.content{
+    text-align: center;
+    color: #1c2c89;
+    margin-top: 50px;
+}
+
+/* .champions  */
+
+.champions{
+    float: left;
+    margin-left: 130px;
+    height:10px;    
+    margin-top: 100px;
+}
+
+.champions-img{
+    display: flex;
+    margin-bottom: 250px;
+}
+
+
+
+.champions>img{
+    height : 500px;
+}
+
+.content2{
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+
+/* button  */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 999; 
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(90deg, rgba(39,210,242,1) 0%, rgba(62,113,228,1) 20%, rgba(207,42,186,1) 44%, rgba(238,44,130,1) 60%, rgba(251,105,98,1) 80%, rgba(254,248,76,1) 100%);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    /* opacity: 0; */
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position:0 0;}
+}
+
+

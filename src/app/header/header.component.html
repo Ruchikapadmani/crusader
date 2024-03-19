@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <!-- <section class="header"> -->
+    <div class="row">
+        <div class="line"></div>
+    </div>
+    <div class="navbar">
+        <div class="logo col-1">
+            <img src="../../assets/Crusader-logo.png" alt="logo" width="60px">
+        </div>
+        <div class="nav">    
+            <div id="menu_content" [style.visibility]="isMenuOpen ? 'visible' : 'hidden'"
+                [style.opacity]="isMenuOpen ? '1':'0'">
+                <div class="nav-menu">
+                    <a routerLink="/">Home</a>
+                    <a routerLink="/amusement">Amusement</a>
+                    <a routerLink="/exhibit">Exhibit</a>
+                    <a routerLink="/reservation">Reservation</a>
+                    <a routerLink="/food">Food</a>
+                    <a routerLink="/about-us">About-us</a>
+                </div>
+            </div>
+            <button *ngIf="isMenuOpen" (click)=" toggleMenu()" style="margin: auto;">
+                <h1>﹀</h1>
+            </button>
+            <button  *ngIf="!isMenuOpen" (click)=" toggleMenu()">
+                <h1>︿</h1>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="line"></div>
+    </div>
+    <!-- </section> -->
+</div>
+

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f4; 
+}
+
+.toggleMenu> button{
+ outline: none;
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+.container-fluid{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+.line{
+    height: 7px;
+    background: rgb(39,210,242);
+    background: linear-gradient(90deg, rgba(39,210,242,1) 0%, rgba(62,113,228,1) 20%, rgba(207,42,186,1) 44%, rgba(238,44,130,1) 60%, rgba(251,105,98,1) 80%, rgba(254,248,76,1) 100%);
+}
+
+#menu_content > .nav-menu a{
+    text-decoration: none;
+    padding:10px;
+    font-size: 20px;
+    color:#081351; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    height: 70px;
+}
+
+.nav{
+    margin-top: 0px;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    /* position: relative; */
+}
+
+/***** Slide right *****/
+#menu_content > .nav-menu{
+    margin-top: 8px;
+    animation: 4s slide-right;
+    /* height: 20px; */
+  }
+  @keyframes slide-right{
+    from {
+      margin-left: -90%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+
+
+  

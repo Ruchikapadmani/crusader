@@ -1,0 +1,27 @@
+.con>h3 {
+    line-height: 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 33px;
+}
+
+
+/* .row{
+    padding: 25px 25px 25px 35px;
+} */
+
+.games>p {
+    margin-left: 60px;
+}
+
+.container-fluid {
+    background: #e2e2e2;
+    color: black;
+    height: 100%;
+}
+
+.social-icons a {
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+}
